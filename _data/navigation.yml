@@ -1,0 +1,17 @@
+primary:
+  - text: Some navigation
+    href: /#placeholder
+    topnavcondense: false
+    main-file-path: /placeholder/
+    # blurb: |
+    #   <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Services (TTS)</a> applies modern methodologies and technologies to improve the public’s experience with government by helping agencies make their services more accessible, efficient, and effective. Below is more information on both general TTS policies and the individual offices within TTS.
+    children:
+      - text: Placeholder
+        url: placeholder/
+        internal: true
+footer:
+  # - text: File an issue
+  #   href: https://github.com/18F/handbook/issues/
+  #   external: true
+  # - text: Contributing
+  #   href: /contributing/
