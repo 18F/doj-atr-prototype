@@ -1,5 +1,5 @@
 ---
-title: About the TTS Handbook
+title: About this project
 ---
 
 Some text here

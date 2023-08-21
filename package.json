@@ -1,7 +1,7 @@
 {
-  "name": "tts-handbook",
+  "name": "doj-atr-prototype",
   "version": "3.0.0",
-  "description": "The TTS Handbook",
+  "description": "DOJ Antitrust prototype",
   "scripts": {
     "build": "eleventy",
     "clean": "rm -rf _site",

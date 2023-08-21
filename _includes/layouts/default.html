@@ -10,6 +10,7 @@ footer, etc.).
 
 {% if page.inputPath == './pages/index.html' %} 
   <main id="main-content" class="usa-prose usa-prose__home">
+  {% include "system-warning.html" %}
 {% else %}
   {% assign words = content | split: " "%}
   {% if words.size > site.inpagenavwordcount %}

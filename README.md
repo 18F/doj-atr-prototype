@@ -1,5 +1,9 @@
 # DOJ Antitrust backend prototype
 
+This prototype is being developed by [18F](https://18f.gsa.gov/) on behalf of the DOJ Antitrust Division (ATR).
+
+This a non-production system. This means this site is only for testing and prototyping and may not be used to store actual data.
+
 ## Development
 
 ### Docker
