@@ -1,0 +1,41 @@
+---
+---
+
+{% comment %}
+This is the primary layout. It is separated out in the event that we eventually
+want other kinds of pages with the same base setup (banner, header, search,
+footer, etc.).
+{% endcomment %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  {% include "meta.html" %}
+
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    {% include "gov-site-banner.html" %}
+    <section class="usa-banner" aria-label="Testing site only">
+      <div class="usa-alert usa-alert--info usa-alert--slim">
+        <div class="usa-alert__body">
+          <p class="usa-alert__text">This site is for testing purposes and may not be used with real data</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="usa-layout-docs usa-layout-docs__main usa-prose internal-page">
+      <div class="usa-section">
+        <div class="grid-container">
+          <div class="usa-in-page-nav-container">
+            <main id="main-content" class="usa-prose">
+              {{ content }}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "scripts.html" %}
+  </body>
+</html>
