@@ -6,10 +6,10 @@ body.internal {
 
   .usa-logo {
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
 
     a {
-      color: white;
+      @include u-text('white');
     }
   }
 
@@ -23,17 +23,21 @@ body.internal {
     }
   }
 
-  .usa-nav-container {
-    max-width: none;
-  }
-
   .usa-nav {
-    &.primary-nav {
-      justify-content: flex-start;
+    .nav-container {
+      display: flex;
+      width: 100%;
     }
 
-    &.secondary-nav {
-      justify-content: flex-end;
+    @media (max-width: 1024px) {
+      .nav-container {
+        display: block;
+      }
+    }
+
+    ul {
+      margin-bottom: 0;
+      margin-top: 0;
     }
 
     li {

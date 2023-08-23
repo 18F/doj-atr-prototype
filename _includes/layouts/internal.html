@@ -18,26 +18,7 @@ footer, etc.).
     {% include "gov-site-banner.html" %}
     {% include "test-warning.html" %}
 
-    <div class="usa-overlay"></div>
-    <header class="usa-header usa-header--basic">
-      <div class="usa-navbar">
-        <div class="usa-logo" id="-logo">
-          <em class="usa-logo__text"><a href="{% page "/internal" %}" title="Home">DOJ ATR CCTS</a></em>
-        </div>
-        <button type="button" class="usa-menu-btn">Menu</button>
-      </div>
-      <nav aria-label="Primary navigation" class="usa-nav">
-        <div class="usa-nav__inner">
-          <button type="button" class="usa-nav__close">
-            {% include "icons/svg-close.html" %}
-          </button>
-          {% include "usa-nav__primary.html" %}
-          <div class="usa-nav__secondary">
-            <ul class="usa-nav__secondary-links"></ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    {% include "internal-header.html" %}
 
     <div class="usa-layout-docs usa-layout-docs__main usa-prose internal-page">
       <div class="usa-section">

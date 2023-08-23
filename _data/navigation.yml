@@ -7,9 +7,9 @@ primary:
     path: /internal/reports
   - text: Manage
     path: /internal/manage
-footer:
-  # - text: File an issue
-  #   href: https://github.com/18F/handbook/issues/
-  #   external: true
-  # - text: Contributing
-  #   href: /contributing/
+
+secondary:
+  - text: Search
+    path: /internal/search
+  - text: Account
+    path: /internal/account
