@@ -1,0 +1,57 @@
+body.internal {
+  @include u-bg('base-lightest');
+}
+
+.internal {
+
+  .usa-logo {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    a {
+      color: white;
+    }
+  }
+
+  .usa-header--basic {
+    @include u-bg('base-dark');
+  }
+
+  @media (min-width: 1024px) {
+    .usa-header--basic {
+      display: flex;
+    }
+  }
+
+  .usa-nav-container {
+    max-width: none;
+  }
+
+  .usa-nav {
+    &.primary-nav {
+      justify-content: flex-start;
+    }
+
+    &.secondary-nav {
+      justify-content: flex-end;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+    }
+
+    .usa-nav-link {
+      @include u-text('white');
+    }
+
+    .usa-nav-link:hover {
+      @include u-text('accent-cool');
+    }
+  }
+
+  #svg-close {
+    height: 50%;
+  }
+}
+
