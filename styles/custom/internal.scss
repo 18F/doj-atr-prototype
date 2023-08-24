@@ -23,6 +23,11 @@ body.internal {
     }
   }
 
+  // trying to make this thing as wide as possible
+  .usa-in-page-nav-container main {
+    max-width: none;
+  }
+
   .usa-nav {
     .nav-container {
       display: flex;
@@ -56,6 +61,14 @@ body.internal {
 
   #svg-close {
     height: 50%;
+  }
+
+  ////////////////////
+  // All complaints //
+  ////////////////////
+
+  .usa-list--unstyled > li {
+    @include u-margin-bottom(1);
   }
 }
 
