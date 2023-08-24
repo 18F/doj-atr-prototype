@@ -1,15 +1,15 @@
 primary:
   - text: Inbox
-    path: /internal/inbox/
+    path: /internal/
   - text: Documentation
-    path: /internal/documentation
+    path: "#"
   - text: Reports
-    path: /internal/reports
+    path: "#"
   - text: Manage
-    path: /internal/manage
+    path: "#"
 
 secondary:
   - text: Search
-    path: /internal/search
+    path: "#"
   - text: Account
-    path: /internal/account
+    path: "#"
