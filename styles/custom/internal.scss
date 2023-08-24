@@ -67,6 +67,11 @@ body.internal {
   // All complaints //
   ////////////////////
 
+  .usa-checkbox {
+    // mysterious but effective
+    padding-bottom: 100%;
+  }
+
   .usa-list--unstyled > li {
     @include u-margin-bottom(1);
   }
