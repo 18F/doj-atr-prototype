@@ -6,7 +6,7 @@
     "build": "eleventy",
     "clean": "rm -rf _site",
     "debug": "DEBUG=* eleventy --serve --incremental",
-    "federalist": "npm run build",
+    "pages": "npm run build",
     "lint": "prettier -w .",
     "serve": "npm run start",
     "start": "eleventy --serve --incremental",

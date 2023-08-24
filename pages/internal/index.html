@@ -1,0 +1,74 @@
+---
+title: All complaints
+layout: layouts/internal
+---
+
+<div class="grid-container-widescreen">
+  <div class="grid-row grid-gap">
+    <div class="mobile-lg:grid-col-3">
+      {% include "internal/complaints-side-nav.html" %}
+    </div>
+    <div class="mobile-lg:grid-col-9">
+        <h2 class="margin-top-0 display-inline">All complaints</h2>
+        <button type="button" class="usa-button float-right">Add new complaint</button>
+
+      <div>
+        <label class="usa-label" for="bulk-actions">Bulk actions</label>
+        <div class="usa-combo-box maxw-card-lg">
+          <select class="usa-select" name="bulk-actions" id="bulk-actions">
+            <option value>Select</option>
+            <!-- <option value=""></option> -->
+          </select>
+        </div>
+
+        <div class="display-inline float-right">TODO Search here</div>
+      </div>
+
+      <div class="usa-table-container--scrollable" tabindex="0">
+        <table class="usa-table usa-table--borderless">
+          <thead>
+            <tr>
+              <th role="columnheader"></th>
+              <th data-sortable scope="col" role="columnheader">Case no.</th>
+              <th data-sortable scope="col" role="columnheader">Name</th>
+              <th scope="col" role="columnheader">Tags</th>
+              <th data-sortable scope="col" role="columnheader">Assigned to</th>
+              <th scope="col" role="columnheader">Section</th>
+              <th data-sortable scope="col" role="columnheader">Last updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in (1..10) %}
+              <tr>
+                <th scope="row">
+                  <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input"
+                      id="check-item-{{i}}"
+                      type="checkbox"
+                      name="check-bulk-actions"
+                      value="{{i}}"
+                    /><label class="usa-checkbox__label" for="check-bulk-actions"></label>
+                    <!-- TODO figure out appropriate label -->
+                  </div>
+                </th>
+                <th data-sort-value="100{{i}}" scope="row">100{{i}}</th>
+                <td data-sort-value="{{i}}">First Last</td>
+                <td>short tag, a much longer tag</td>
+                <td data-sort-value="{{i}}">First Last</td>
+                <td>H:OPS<br/>A:FFB</td>
+                <td data-sort-value="{{i}}" class="text-tabular text-right">01/01/2023</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div
+          class="usa-sr-only usa-table__announcement-region"
+          aria-live="polite"
+        ></div>
+      </div>
+
+      {% include "internal/complaints-pagination.html" %}
+    </div>
+  </div>
+</div>
