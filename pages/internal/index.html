@@ -9,8 +9,8 @@ layout: layouts/internal
       {% include "internal/complaints-side-nav.html" %}
     </div>
     <div class="mobile-lg:grid-col-9">
-        <h2 class="margin-top-0 display-inline">All complaints</h2>
-        <button type="button" class="usa-button float-right">Add new complaint</button>
+        <h2 class="margin-top-0 display-inline">{{ title }}</h2>
+        <a type="button" href="{{ '/internal/new' | url }}" class="usa-button usa-button--base float-right">Add new complaint</a>
 
       <div>
         <label class="usa-label" for="bulk-actions">Bulk actions</label>

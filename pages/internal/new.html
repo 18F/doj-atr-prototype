@@ -1,0 +1,191 @@
+---
+title: Create new complaint
+layout: layouts/internal
+---
+
+<h1 class="margin-top-0">{{ title }}</h1>
+
+<div class="grid-container-widescreen">
+  <div class="grid-row grid-gap">
+    <div class="mobile-lg:grid-col-7">
+
+      <div class="usa-card__container">
+        <!-- TODO would a form group be better than a field set? -->
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class=" usa-legend usa-legend--large">Contact information</legend>
+          </div>
+          <div class="usa-card__body">
+            <label class="usa-label" for="new-contact-name">Name</label
+            ><input class="usa-input" id="new-contact-name" name="new-contact-name"/>
+            <label class="usa-label" for="new-contact-email">Email address</label
+            ><input class="usa-input" id="new-contact-email" name="new-contact-email"/>
+            <label class="usa-label" for="new-contact-phone">Phone number</label
+            ><input class="usa-input" id="new-contact-phone" name="new-contact-phone"/>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="usa-card__container">
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class="usa-legend usa-legend--large">Summary</legend>
+          </div>
+          <div class="usa-card__body">
+            <label class="usa-label" for="new-summary">Complaint summary</label
+            ><textarea
+              class="usa-textarea"
+              id="new-summary"
+              name="new-summary"
+            ></textarea>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="usa-card__container">
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class="usa-legend usa-legend--large">Complaint details</legend>
+          </div>
+          <div class="usa-card__body">
+            <label class="usa-label" for="new-details-orgs">The names of the companies, individuals, or organizations involved</label
+            ><textarea
+              class="usa-textarea"
+              id="new-details-orgs"
+              name="new-details-orgs"
+            ></textarea>
+            <p>TODO add more?</p>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="usa-card__container">
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class="usa-legend usa-legend--large">Attachments</legend>
+          </div>
+          <div class="usa-card__body">
+            <label class="usa-label" for="new-attachment">Upload an image, video, or document</label
+            ><input
+              id="new-attachment"
+              class="usa-file-input"
+              type="file"
+              name="new-attachment"
+            />
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- This is just a link because there is not behavior at the moment
+      TODO: at least add flash to index page saying "saved!" -->
+      <a type="button" href="{{ '/internal' | url }}" class="usa-button usa-button--base">Submit complaint</a>
+    </div> <!-- end grid-col-7 -->
+
+    <div class="mobile-lg:grid-col-5">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <legend class=" usa-legend usa-legend--large">Status</legend>
+        </div>
+        <div class="usa-card__body">
+          <label class="usa-label" for="new-assign-person">
+            Assign to person
+          </label>
+          <div class="usa-combo-box">
+            <select class="usa-select" name="new-assign-person" id="new-assign-person">
+              <option value>Select</option>
+              <option value="person-1">Person 1</option>
+              <option value="person-2">Person 2</option>
+              <option value="person-3">Person 3</option>
+            </select>
+          </div>
+
+          <label class="usa-label" for="new-assign-section">
+            Assign to section
+          </label>
+          <select class="usa-select" name="new-assign-section" id="new-assign-section">
+            <option value>Select</option>
+            <option value="section-1">Civil Conduct Task Force</option>
+            <option value="section-2">Defense, Industrials, and Aerospace</option>
+            <option value="section-3">Financial Services, Fintech, and Banking</option>
+            <option value="section-4">Healthcare and Consumer Products</option>
+            <option value="section-5">Media, Entertainment, and Communications</option>
+            <option value="section-6">Technology and Digital Platforms</option>
+            <option value="section-7">Transportation, Energy, and Agriculture</option>
+            <option value="section-8">Chicago (criminal)</option>
+            <option value="section-9">New York (criminal)</option>
+            <option value="section-10">San Francisco (criminal)</option>
+            <option value="section-11">Washington Criminal I</option>
+            <option value="section-12">Washington Criminal II</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="usa-card__container">
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class="usa-legend usa-legend--large">Tags</legend>
+          </div>
+          <div class="usa-card__body">
+            <label class="usa-label" for="new-tags">Add tags</label
+            ><input class="usa-input" id="new-tags" name="new-tags"/>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="usa-card__container">
+        <fieldset class="usa-fieldset">
+          <div class="usa-card__header">
+            <legend class=" usa-legend usa-legend--large">Complaint method</legend>
+          </div>
+          <div class="usa-card__body">
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="new-method-voicemail"
+                type="radio"
+                name="new-method"
+                value="voicemail"
+              />
+              <label class="usa-radio__label" for="new-method-voicemail"
+                >Voicemail</label
+              >
+
+              <input
+                class="usa-radio__input"
+                id="new-method-mail"
+                type="radio"
+                name="new-method"
+                value="mail"
+              />
+              <label class="usa-radio__label" for="new-method-mail"
+                >Letter (USPS)</label
+              >
+
+              <input
+                class="usa-radio__input"
+                id="new-method-email"
+                type="radio"
+                name="new-method"
+                value="email"
+              />
+              <label class="usa-radio__label" for="new-method-email"
+                >Voicemail</label
+              >
+
+              <input
+                class="usa-radio__input"
+                id="new-method-other"
+                type="radio"
+                name="new-method"
+                value="other"
+              />
+              <label class="usa-radio__label" for="new-method-other"
+                >Other</label
+              >
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div> <!-- end grid-col-5 -->
+</div>
