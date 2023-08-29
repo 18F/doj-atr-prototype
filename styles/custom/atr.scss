@@ -62,33 +62,7 @@ body.internal {
   #svg-close {
     height: 50%;
   }
-
-  ////////////////////
-  // All complaints //
-  ////////////////////
-
-  .usa-checkbox {
-    // mysterious but effective
-    padding-bottom: 100%;
-  }
-
-  .usa-list--unstyled > li {
-    @include u-margin-bottom(1);
-  }
-
-  ///////////////////
-  // New complaint //
-  ///////////////////
-
-  .usa-card__container {
-    @include u-margin-bottom(3);
-    height: unset;
-  }
-
-  .usa-legend {
-    // TODO figure out how to use uswds colors
-    border-bottom: solid lightgray 2px;
-    @include u-font('heading', 'lg');
-  }
 }
+
+
 
