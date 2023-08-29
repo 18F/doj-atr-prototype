@@ -17,9 +17,3 @@ primary:
     path: /
   - text: FOIA
     path: /
-
-secondary:
-  - text: Search
-    path: "#"
-  - text: Account
-    path: "#"

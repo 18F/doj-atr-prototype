@@ -3,9 +3,11 @@
 
 <header class="usa-header usa-header--basic">
   <div class="usa-navbar">
-    <div class="usa-logo" id="-logo">
-      <em class="usa-logo__text"><a href="{% page "/internal" %}" title="Home">Antitrust Division</a></em>
-    </div>
+    <a href="{% page "/internal" %}" title="Home">
+      <div class="usa-logo" id="-logo">
+        {% image_with_class "_img/doj-logo.svg" "usa-media-block__img" "DOJ Antitrust Division" %}
+      </div>
+    </a>
     <button type="button" class="usa-menu-btn">Menu</button>
   </div>
   <nav aria-label="Primary navigation" class="usa-nav">

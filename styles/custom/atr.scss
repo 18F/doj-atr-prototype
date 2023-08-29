@@ -1,68 +1,66 @@
-body.internal {
+$doj-blue: #162e51;
+$doj-grey: #2e2e2a;
+$doj-gold: #ffbe2e;
+$doj-accent: #f6f6f2;
+
+body {
   @include u-bg('base-lightest');
 }
 
-.internal {
+.usa-logo {
+  margin-left: 1rem;
+  margin-top: .5rem;
 
-  .usa-logo {
-    margin-left: 1rem;
-    margin-top: .5rem;
-
-    a {
-      @include u-text('white');
-    }
-  }
-
-  .usa-header--basic {
-    @include u-bg('base-dark');
-  }
-
-  @media (min-width: 1024px) {
-    .usa-header--basic {
-      display: flex;
-    }
-  }
-
-  // trying to make this thing as wide as possible
-  .usa-in-page-nav-container main {
-    max-width: none;
-  }
-
-  .usa-nav {
-    .nav-container {
-      display: flex;
-      width: 100%;
-    }
-
-    @media (max-width: 1024px) {
-      .nav-container {
-        display: block;
-      }
-    }
-
-    ul {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-
-    li {
-      display: inline-block;
-      margin-right: 2em;
-    }
-
-    .usa-nav-link {
-      @include u-text('white');
-    }
-
-    .usa-nav-link:hover {
-      @include u-text('accent-cool');
-    }
-  }
-
-  #svg-close {
-    height: 50%;
+  a {
+    @include u-text('white');
   }
 }
 
+.usa-header--basic {
+  background-color: $doj-blue;
+}
 
+.usa-header--basic .usa-nav {
+  background-color: $doj-grey;
+  border-top: 3px solid $doj-gold;
+  padding: 0px;
+}
 
+@media (max-width: 1024px) {
+  .usa-header--basic .usa-nav {
+    background-color: white;
+    color: black;
+  }
+}
+
+.usa-nav__primary-item:hover {
+  background-color: $doj-gold;
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a {
+  color: white;
+
+  &:hover {
+    color: $doj-grey;
+  }
+}
+
+.usa-nav {
+  ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 2em;
+  }
+
+  .usa-nav-link {
+    @include u-text('white');
+  }
+
+  .usa-nav-link:hover {
+    @include u-text('accent-cool');
+  }
+}
