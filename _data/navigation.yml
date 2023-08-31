@@ -1,15 +1,19 @@
 primary:
-  - text: Inbox
-    path: /internal/
-  - text: Documentation
-    path: "#"
-  - text: Reports
-    path: "#"
-  - text: Manage
-    path: "#"
-
-secondary:
-  - text: Search
-    path: "#"
-  - text: Account
-    path: "#"
+  - text: About
+    path: /
+  - text: Report Violations
+    path: /
+  - text: Press Room
+    path: /
+  - text: Upcoming Hearings and Trials
+    path: /
+  - text: Program Areas
+    path: /
+  - text: Public Documents
+    path: /
+  - text: Cases
+    path: /
+  - text: Employment
+    path: /
+  - text: FOIA
+    path: /
