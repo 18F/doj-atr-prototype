@@ -7,14 +7,9 @@ body {
   @include u-bg('base-lightest');
 }
 
-.usa-logo {
-  margin-left: 1rem;
-  margin-top: .5rem;
-
-  a {
-    @include u-text('white');
-  }
-}
+////////////
+// HEADER //
+////////////
 
 .usa-header--basic {
   background-color: $doj-blue;
@@ -24,6 +19,7 @@ body {
   background-color: $doj-grey;
   border-top: 3px solid $doj-gold;
   padding: 0px;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -33,17 +29,23 @@ body {
   }
 }
 
-.usa-nav__primary-item:hover {
-  background-color: $doj-gold;
-}
+// doj atr image
+.usa-logo {
+  margin-left: 1rem;
+  margin-top: .5rem;
 
-.usa-nav__primary > .usa-nav__primary-item > a {
-  color: white;
+  a {
+    @include u-text('white');
+  }
 
-  &:hover {
-    color: $doj-grey;
+  @media (max-width: 1024px) {
+    width: 10rem;
   }
 }
+
+////////////////
+// NAVIGATION //
+////////////////
 
 .usa-nav {
   ul {
@@ -63,4 +65,24 @@ body {
   .usa-nav-link:hover {
     @include u-text('accent-cool');
   }
+}
+
+.usa-nav__primary-item:hover {
+  background-color: $doj-gold;
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a {
+  color: white;
+
+  &:hover {
+    color: $doj-grey;
+  }
+}
+
+///////////////
+// MAIN PAGE //
+///////////////
+
+.usa-section--dark h2 {
+  color: $doj-gold;
 }
