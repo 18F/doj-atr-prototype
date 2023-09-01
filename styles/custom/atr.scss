@@ -19,6 +19,13 @@ body {
   background-color: $doj-blue;
 }
 
+.usa-header--basic .usa-navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 325px;
+}
+
 .usa-header--basic .usa-nav {
   background-color: $doj-grey;
   border-top: 3px solid $doj-gold;
@@ -30,6 +37,19 @@ body {
   .usa-header--basic .usa-nav {
     background-color: white;
     color: black;
+  }
+
+  .usa-header--basic .usa-navbar {
+    border-bottom: none;
+    display: inline;
+    width: unset;
+
+    a {
+      display: inline-block;
+    }
+    button {
+      float: right;
+    }
   }
 }
 
@@ -134,6 +154,10 @@ h1::after {
 
 #main-content section {
   border-bottom: solid 1px lightgray;
+}
+
+.grid-container {
+  max-width: 48rem;
 }
 
 ///////////////
