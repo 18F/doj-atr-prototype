@@ -8,7 +8,7 @@ body {
 }
 
 .usa-layout-docs {
-  @include u-bg('base-lightest');
+  background-color: white;
 }
 
 ////////////
@@ -118,10 +118,36 @@ body {
   }
 }
 
+/////////////////////
+// GENERAL STYLING //
+/////////////////////
+
+h1::after {
+  border-bottom: 2px solid $doj-gold;
+  border-top: 2px solid $doj-gold;
+  content: '';
+  display: block;
+  height: 0.5rem;
+  margin: 1.5rem 0;
+  width: 3.25rem;
+}
+
+#main-content section {
+  border-bottom: solid 1px lightgray;
+}
+
 ///////////////
 // MAIN PAGE //
 ///////////////
 
-.usa-section--dark h2 {
-  color: $doj-gold;
+h2 {
+  @include u-font-family('serif');
+}
+
+.section-report .usa-section {
+  background-color: white;
+}
+
+.usa-card__container {
+  margin-bottom: 1em;
 }
