@@ -3,6 +3,7 @@ primary:
     path: /
   - text: Report Violations
     path: /
+    active: true
   - text: Press Room
     path: /
   - text: Upcoming Hearings and Trials

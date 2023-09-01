@@ -2,7 +2,7 @@
   <ul class="usa-nav__primary">
     {% for item in navigation.primary %}
       <li class="usa-nav__primary-item">
-        <a href="{% link item.path %}" class="usa-nav-link"><span>{{ item.text }}</span></a>
+        <a href="{% link item.path %}" class="usa-nav-link {% if item.active %}nav-link-active {% endif %}"><span>{{ item.text }}</span></a>
       </li>
     {% endfor %}
   </ul>
