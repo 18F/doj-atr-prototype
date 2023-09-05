@@ -142,6 +142,10 @@ body {
 // GENERAL STYLING //
 /////////////////////
 
+a {
+  color: #0064A8;
+}
+
 h1::after {
   border-bottom: 2px solid $doj-gold;
   border-top: 2px solid $doj-gold;
@@ -152,9 +156,25 @@ h1::after {
   width: 3.25rem;
 }
 
-#main-content .usa-section-main {
-  border-bottom: solid 1px lightgray;
+h2 {
+  @include u-font("sans", "xl");
 }
+
+h3 {
+  color: #07648D;
+}
+
+#main-content {
+  .usa-section-main {
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  #introduction {
+    padding-top: 0;
+  }
+}
+
 
 .grid-container {
   max-width: 48rem;
@@ -164,8 +184,9 @@ h1::after {
 // MAIN PAGE //
 ///////////////
 
-h2 {
-  @include u-font-family('serif');
+.usa-section {
+  margin-top: 0;
+  padding-top: 3rem;
 }
 
 .section-report .usa-section {
@@ -173,5 +194,7 @@ h2 {
 }
 
 .usa-card__container {
-  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em;
 }
