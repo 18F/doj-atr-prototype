@@ -8,7 +8,7 @@ body {
 }
 
 .usa-layout-docs {
-  @include u-bg('base-lightest');
+  background-color: white;
 }
 
 ////////////
@@ -17,6 +17,13 @@ body {
 
 .usa-header--basic {
   background-color: $doj-blue;
+}
+
+.usa-header--basic .usa-navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 325px;
 }
 
 .usa-header--basic .usa-nav {
@@ -30,6 +37,19 @@ body {
   .usa-header--basic .usa-nav {
     background-color: white;
     color: black;
+  }
+
+  .usa-header--basic .usa-navbar {
+    border-bottom: none;
+    display: inline;
+    width: unset;
+
+    a {
+      display: inline-block;
+    }
+    button {
+      float: right;
+    }
   }
 }
 
@@ -118,10 +138,40 @@ body {
   }
 }
 
+/////////////////////
+// GENERAL STYLING //
+/////////////////////
+
+h1::after {
+  border-bottom: 2px solid $doj-gold;
+  border-top: 2px solid $doj-gold;
+  content: '';
+  display: block;
+  height: 0.5rem;
+  margin: 1.5rem 0;
+  width: 3.25rem;
+}
+
+#main-content section {
+  border-bottom: solid 1px lightgray;
+}
+
+.grid-container {
+  max-width: 48rem;
+}
+
 ///////////////
 // MAIN PAGE //
 ///////////////
 
-.usa-section--dark h2 {
-  color: $doj-gold;
+h2 {
+  @include u-font-family('serif');
+}
+
+.section-report .usa-section {
+  background-color: white;
+}
+
+.usa-card__container {
+  margin-bottom: 1em;
 }

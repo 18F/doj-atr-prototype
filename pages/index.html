@@ -4,17 +4,101 @@ homepage: true
 title: DOJ Antitrust
 ---
 
-<section class="grid-container usa-section usa-section--dark">
-  <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-4">
-      <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-        Future antitrust complaint center form
-      </h2>
-    </div>
-    <div class="tablet:grid-col-8 usa-prose">
-      <p>
-        {{ site.description }}
-      </p>
-    </div>
-  </div>
+<h1>Report general antitrust violations</h1>
+
+<section class="usa-section padding-top-0">
+  <p>The mission of the Antitrust Division is to promote economic competition through enforcing and providing guidance on antitrust laws and principles. If you think you've encountered an antitrust violation, you can report it to the Antitrust Division.</p>
+
+  <a href="{% link '/report' %}" class="usa-button">Report an antitrust violation</a>
 </section>
+
+<section class="usa-section">
+  <h2 class="margin-top-0 tablet:margin-bottom-0">
+    What is an antitrust violation?
+  </h2>
+  <p>The antitrust laws aim to protect economic freedom and opportunity. They do so by promoting free and fair competition for goods, services, and labor.</p>
+  <p>Free and fair competition has many benefits, including:</p>
+  <ul>
+    <li>Lower prices, better quality, and more choice of goods and services</li>
+    <li>Higher wages</li>
+  </ul>
+
+  <p>The antitrust laws promote competition by prohibiting activities like:</p>
+  <ul>
+    <li>Price fixing</li>
+    <li>Corporate mergers likely to lower competition within a particular market</li>
+    <li>Acts meant to gain or keep monopoly power</li>
+  </ul>
+  </p>
+  <p><a href="#">Learn more about the antitrust laws and how they may affect you.</a></p>
+</section>
+
+<section class="usa-section">
+  <h2 class="margin-top-0 tablet:margin-bottom-0">
+    How does the Antitrust Division handle antitrust complaints?
+  </h2>
+  <p>
+    The Antitrust Division will create a record of the information that you provided, review your complaint, and refer it to the appropriate Division staff for further review. If the Division needs more information, we will contact you. Due to the confidential nature of Division investigations, you will not be notified if we open an investigation. While we try to reply to every complaint, we cannot always respond to each message individually.
+  </p>
+  <p>
+    Our <a href="#">Confidentiality Policy</a> and <a href="#">Privacy Policy</a> apply to all complaints received by the Antitrust Division.
+  </p>
+</section>
+
+<section class="usa-section">
+  <h2 class="margin-top-0 tablet:margin-bottom-0">
+    Criminal antitrust leniency program for corporations and individuals
+  </h2>
+  <p>Individuals or companies who (a) believe they may have been involved in criminal antitrust violations and (b) cooperate with the Antitrust Division can avoid criminal conviction, fines, and prison sentences if they meet the conditions of the Division’s Leniency Program. More information about the Division’s Leniency Program is available on the <a href="#">Leniency Program page</a>.</p>
+</section>
+
+{% comment %} TODO hackily overriding main template instead of just making a separate template {% endcomment %}
+</div> <!-- grid-container -->
+</div> <!-- usa-section -->
+
+<div class="usa-section bg-primary-lighter section-report">
+  <div class="grid-container">
+
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h2 class="usa-card__heading">Report online</h2>
+      </div>
+      <div class="usa-card__body">
+        <p>You can report an antitrust violation to the Department of Justice via an online form.</p>
+      </div>
+      <div class="usa-card__footer">
+        <a href="{% link '/report' %}" class="usa-button">Report an antitrust violation</a>
+      </div>
+    </div>
+
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h2 class="usa-card__heading">Report by mail or phone</h2>
+      </div>
+      <div class="usa-card__body">
+        <p>When reporting by phone or mail, please use the following questions as a guide to describe your concern:</p>
+        <ul>
+          <li>The names of the companies, individuals, or organizations involved</li>
+          <li>How do you believe they have violated the federal antitrust laws? (For details on federal antitrust laws, see <a href="#" class="usa-link">Antitrust Laws and You</a>.)</li>
+          <li>Examples of, or details about, the conduct that you believe violates the antitrust laws</li>
+          <li>The product or service affected by the conduct, including where the product is manufactured or sold or where is the service is provided</li>
+          <li>The major competitors that sell the product or provide the service</li>
+          <li>Your role in the situation</li>
+          <li>Who is being affected and how they are being affected</li>
+        </p>
+        <h3>Report by postal mail</h3>
+        <p>
+          Citizen Complaint Center<br/>
+          Antitrust Division<br/>
+          950 Pennsylvania Ave., NW<br/>
+          Room 3322<br/>
+          Washington, DC 20530
+        </p>
+        <h3>Report by phone</h3>
+        <p>1-888-647-3258 (toll free in the U.S. and Canada) or 202-307-2040.</p>
+      </div>
+    </div>
+
+    <p>Before reporting, review our <a href="#" class="usa-link">privacy policy and Paperwork Reduction Act statements</a>.</p>
+  </div>
+</div>
