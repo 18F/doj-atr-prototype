@@ -1,0 +1,16 @@
+{% comment %}
+Expects label, id
+{% endcomment %}
+
+<div class="usa-radio">
+  <input
+    class="usa-radio__input"
+    id="type-{{ id }}"
+    type="radio"
+    name="violation-type"
+    value="type-{{ id }}"
+  />
+  <label class="usa-radio__label" for="type-{{ id }}">
+    {{ label }}
+  </label>
+</div>

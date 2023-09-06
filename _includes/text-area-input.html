@@ -1,0 +1,12 @@
+{% comment %}
+Expects label, id
+{% endcomment %}
+
+<label class="usa-label" for="report-detail-{{ id }}">
+  {{ label }}
+</label>
+<textarea
+  class="usa-textarea"
+  id="report-detail-{{ id }}"
+  name="report-detail-{{ id }}"
+></textarea>

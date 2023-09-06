@@ -198,3 +198,51 @@ h3 {
   margin-right: 0;
   margin-bottom: 1.5em;
 }
+
+/////////////
+// REPORTS //
+/////////////
+
+.section-summary {
+  dd {
+    margin-inline-start: 0;
+  }
+
+  dt {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  .robot {
+    background-color: #f9f9f9;
+    border: solid 1px lightgrey;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 1em;
+    width: fit-content;
+  }
+
+  .usa-card__container {
+    border-left: solid 5px $doj-gold;
+    border-radius: 0;
+  }
+
+  .usa-checkbox__label {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+  }
+}
+
+.section-violation-type {
+  label {
+    font-weight: bold;
+  }
+
+  p {
+    margin-left: 2em;
+  }
+}
+
+.usa-section.usa-section-report {
+  padding-top: 0;
+}
