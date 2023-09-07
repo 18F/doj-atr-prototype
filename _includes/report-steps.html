@@ -1,0 +1,12 @@
+{% comment %}
+Expects parameter "current_step" with a integer for the step number
+{% endcomment %}
+
+<div class="usa-step-indicator" aria-label="progress">
+  <ol class="usa-step-indicator__segments">
+    {% report_step "Contact information", 1, current_step %}
+    {% report_step "Type of violation", 2, current_step %}
+    {% report_step "Additional details", 3, current_step %}
+    {% report_step "Contact information", 5, current_step %}
+  </ol>
+</div>

@@ -3,6 +3,7 @@ const imageShortcode = require("./image");
 const imageWithClassShortcode = require("./imageWithClass");
 const linkShortcode = require("./link");
 const pageShortcode = require("./page");
+const reportStep = require("./reportStep")
 const usaCurrentShortcode = require("./usaCurrent");
 const uswdsIconShortcode = require("./uswdsIcon");
 
@@ -12,6 +13,7 @@ const shortcodePlugin = (eleventyConfig) => {
   eleventyConfig.addShortcode("image_with_class", imageWithClassShortcode);
   eleventyConfig.addShortcode("link", linkShortcode);
   eleventyConfig.addShortcode("page", pageShortcode);
+  eleventyConfig.addShortcode("report_step", reportStep);
   eleventyConfig.addShortcode("uswds_icon", uswdsIconShortcode);
   eleventyConfig.addShortcode("usa_current", usaCurrentShortcode);
 };

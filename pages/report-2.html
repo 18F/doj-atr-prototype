@@ -1,0 +1,47 @@
+---
+title: Report an antitrust violation
+---
+
+<h1>Report an antitrust violation</h1>
+
+{% include "report-steps.html", current_step: 2 %}
+
+<section class="usa-section usa-section-report section-violation-type">
+  <h2>Type of violation</h2>
+
+  <form class="usa-form usa-form--large margin-bottom-3">
+    <fieldset class="usa-fieldset">
+      <legend class="usa-legend usa-legend">What type of violation are you reporting?</legend>
+      {% include "violation-radio.html", label: "Monopoly", id: "monopoly" %}
+      <p>Your company, a competitor, or a company you interact with is trying to create or maintain a monopoly. If a firm is seeking or maintaining monopoly power, it can harm society by lowering output, raising prices, and decreasing innovation than if it had to compete in the market.</p>
+
+      {% include "violation-radio.html", label: "Price fixing", id: "price-fixing" %}
+      <p>Price fixing or wage fixing is an agreement among competitors to raise, fix, or otherwise maintain the price at which their goods or services are sold or wages are set.</p>
+
+      {% include "violation-radio.html", label: "Bid rigging", id: "bid-rigging" %}
+      <p>Bid rigging is the way that conspiring competitors effectively raise prices where purchasers – often federal, state, or local governments – acquire goods or services by soliciting competing bids.</p>
+
+      {% include "violation-radio.html", label: "Customer or territorial allocation", id: "allocation" %}
+      <p>You are concerned that a company divided up customers or the market for its products or services. Market division or allocation schemes are agreements in which competitors divide markets among themselves.</p>
+
+      {% include "violation-radio.html", label: "Anticompetitive employment agreement", id: "noncompete" %}
+      <p>You believe an employment agreement is anticompetitive because it contains a no-poach, a non-compete, a non-disclosure, non-solicit agreement, or another covenant that is unlawful.</p>
+
+      {% include "violation-radio.html", label: "Mergers", id: "mergers" %}
+      <p>The Division investigates mergers that may substantially lessen competition. For example, "gun jumping," where merging parties that are awaiting regulatory approval for their transaction begin to engage in pre-merger coordination such as merging their operations or otherwise transferring significant operational, management, or decision making control over the to-be-acquired assets.</p>
+
+      {% include "violation-radio.html", label: "Fraud against government", id: "gov-fraud" %}
+      <p>Example</p>
+
+      {% include "violation-radio.html", label: "I'm not sure what kind of antitrust violation I'm reporting", id: "unsure" %}
+      <p>Select this if you are unsure if your situation applies to the previous examples. You will be able to tell us more later.</p>
+
+      {% include "violation-radio.html", label: "I have a different question or complaint for the US Government", id: "something-else" %}
+
+      <div class="report-nav">
+        <a href="{% link '/report-3' %}" role="button" class="usa-button">Continue</a>
+        <a href="{% link '/report' %}" class="usa-link margin-left-2">Go back</a>
+      </div>
+    </fieldset>
+  </form>
+</section>
