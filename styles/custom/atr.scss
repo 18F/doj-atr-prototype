@@ -37,6 +37,7 @@ body {
   .usa-header--basic .usa-nav {
     background-color: white;
     color: black;
+    justify-content: unset;
   }
 
   .usa-header--basic .usa-navbar {
@@ -218,13 +219,33 @@ h3 {
     border: solid 1px lightgrey;
     border-radius: .5rem;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
     padding: 1em;
     width: fit-content;
   }
 
-  .usa-card__container {
-    border-left: solid 5px $doj-gold;
-    border-radius: 0;
+  .usa-accordion {
+    h3 {
+      border-left: solid 5px $doj-gold;
+      border-right: solid 1px lightgrey;
+      border-top: solid 1px lightgrey;
+      font-size: larger;
+    }
+
+    div {
+      border-bottom: solid 1px lightgrey;
+      border-left: solid 5px $doj-gold;
+      border-right: solid 1px lightgrey;
+    }
+
+    button {
+      background-color: transparent;
+    }
+  }
+
+  // overriding uswds rules
+  .usa-accordion__heading:not(:first-child), .usa-prose .usa-accordion__heading:not(:first-child) {
+    margin-top: 1.5rem;
   }
 
   .usa-checkbox__label {
@@ -239,10 +260,18 @@ h3 {
   }
 
   p {
-    margin-left: 2em;
+    margin-left: 0.5em;
   }
+}
+
+.usa-legend {
+  margin-bottom: 1em;
 }
 
 .usa-section.usa-section-report {
   padding-top: 0;
+}
+
+.usa-step-indicator {
+  margin-top: 3em;
 }

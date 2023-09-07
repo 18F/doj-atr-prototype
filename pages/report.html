@@ -16,12 +16,12 @@ title: Report an antitrust violation
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
       <label class="usa-label" for="report-name">Name (optional)</label>
-      <input class="usa-input" id="report-name" name="report-name"/>
+      <input class="usa-input" id="report-name" name="report-name" type="text"/>
       <label class="usa-label" for="report-email">Email address (optional)</label>
-      <input class="usa-input" id="report-email" name="report-email"/>
+      <input class="usa-input" id="report-email" name="report-email" type="email"/>
       <label class="usa-label" for="report-phone">Phone number (optional)</label>
-      <input class="usa-input" id="report-phone" name="report-phone"/>
-      <a href="{% link '/report-2' %}" role="button" class="usa-button">Continue</a>
+      <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
+      <a href="{% link '/report' %}" role="button" class="usa-button">Continue</a>
     </fieldset>
   </form>
 </section>
