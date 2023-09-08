@@ -166,10 +166,12 @@ h1::after {
 
 h2 {
   @include u-font("sans", "xl");
+  line-height: 1.3;
 }
 
 h3 {
   color: #07648D;
+  line-height: 1.4;
 }
 
 #main-content {
