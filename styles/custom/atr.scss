@@ -188,7 +188,7 @@ h3 {
   max-width: 48rem;
 }
 
-.usa-accordion {
+.usa-prose .usa-accordion {
   h3 {
     border-left: solid 5px $doj-gold;
     border-right: solid 1px lightgrey;
@@ -208,7 +208,7 @@ h3 {
 }
 
 // when an accordion is collapsed, add a line around the bottom
-.usa-accordion__button[aria-expanded="false"] {
+.usa-prose .usa-accordion__button[aria-expanded="false"] {
     border-bottom: 1px solid #d3d3d3;
 }
 
