@@ -188,6 +188,35 @@ h3 {
   max-width: 48rem;
 }
 
+.usa-accordion {
+  h3 {
+    border-left: solid 5px $doj-gold;
+    border-right: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+    font-size: larger;
+  }
+
+  div {
+    border-bottom: solid 1px lightgrey;
+    border-left: solid 5px $doj-gold;
+    border-right: solid 1px lightgrey;
+  }
+
+  button {
+    background-color: transparent;
+  }
+}
+
+// when an accordion is collapsed, add a line around the bottom
+.usa-accordion__button[aria-expanded="false"] {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+// overriding uswds rules
+.usa-accordion__heading:not(:first-child), .usa-prose .usa-accordion__heading:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
 ///////////////
 // MAIN PAGE //
 ///////////////
@@ -231,33 +260,15 @@ h3 {
     width: fit-content;
   }
 
-  .usa-accordion {
-    h3 {
-      border-left: solid 5px $doj-gold;
-      border-right: solid 1px lightgrey;
-      border-top: solid 1px lightgrey;
-      font-size: larger;
-    }
-
-    div {
-      border-bottom: solid 1px lightgrey;
-      border-left: solid 5px $doj-gold;
-      border-right: solid 1px lightgrey;
-    }
-
-    button {
-      background-color: transparent;
-    }
-  }
-
-  // overriding uswds rules
-  .usa-accordion__heading:not(:first-child), .usa-prose .usa-accordion__heading:not(:first-child) {
-    margin-top: 1.5rem;
-  }
-
   .usa-checkbox__label {
     margin-bottom: .5rem;
     margin-top: .5rem;
+  }
+}
+
+.section-report-description {
+  label {
+    font-weight: bold;
   }
 }
 
@@ -266,8 +277,8 @@ h3 {
     font-weight: bold;
   }
 
-  p {
-    margin-left: 0.5em;
+  .usa-fieldset p {
+    margin-left: 2em;
   }
 }
 
