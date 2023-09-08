@@ -7,42 +7,160 @@ title: DOJ Antitrust
 <h1>Report general antitrust violations</h1>
 
 <section class="usa-section usa-section-main padding-top-0" id="introduction">
-  <p>The mission of the Antitrust Division is to promote economic competition through enforcing and providing guidance on antitrust laws and principles. If you think you've encountered an antitrust violation, you can report it to the Antitrust Division.</p>
+  <p>The Antitrust Division promotes free and fair economic competition by enforcing and advising on antitrust laws and principles.</p>
 
-  <a href="{% link '/report' %}" class="usa-button">Report an antitrust violation</a>
+  <p>Information from the public is vital to our work. If you think you’ve encountered an antitrust violation, submit a report about your concern for our staff’s review.</p>
+
+  <p>Your report could be our first alert to a possible violation of <a href="https://www.justice.gov/atr/antitrust-laws-and-you" class="usa-link">antitrust laws</a>. It also could provide evidence that would launch an investigation.</p>
+
+  <p>
+    <a href="{% link '/report' %}" class="usa-button">Start a report</a>
+    <a href="https://www.justice.gov/atr/antitrust-laws-and-you" class="usa-link">Or learn more about types of antitrust violations</a>
+  </p>
 </section>
 
 <section class="usa-section usa-section-main">
   <h2 class="margin-top-0 tablet:margin-bottom-0">
     What is an antitrust violation?
   </h2>
-  <p>The antitrust laws aim to protect economic freedom and opportunity. They do so by promoting free and fair competition for goods, services, and labor.</p>
-  <p>Free and fair competition has many benefits, including:</p>
-  <ul>
-    <li>Lower prices, better quality, and more choice of goods and services</li>
-    <li>Higher wages</li>
-  </ul>
+  <p>Many types of activities can violate antitrust laws. These include:</p>
 
-  <p>The antitrust laws promote competition by prohibiting activities like:</p>
-  <ul>
-    <li>Price fixing</li>
-    <li>Corporate mergers likely to lower competition within a particular market</li>
-    <li>Acts meant to gain or keep monopoly power</li>
-  </ul>
-  </p>
-  <p><a href="https://www.justice.gov/atr/antitrust-laws-and-you" class="usa-link">Learn more about the antitrust laws and how they may affect you.</a></p>
+  <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="true"
+        aria-controls="m-a1"
+      >
+        A company is trying to create or maintain a monopoly.
+      </button>
+    </h3>
+    <div id="m-a1" class="usa-accordion__content usa-prose">
+      <p>An unlawful monopoly exists when one firm has gotten or maintained market power for a product or service by <em>intentionally acting to prevent competition</em>.</p>
+
+      <p>Such monopolies can lower output, raise prices, and reduce innovation.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a2"
+      >
+        Competitors in a market agree to fix prices.
+      </button>
+    </h3>
+    <div id="m-a2" class="usa-accordion__content usa-prose">
+      <p>Price fixing occurs when competitors agree to raise, fix, or otherwise maintain the price for their products or services. For example:</p>
+
+      <ul>
+        <li>Set or adhere to price discounts</li>
+        <li>Keep prices the same</li>
+        <li>Get rid of or lower discounts</li>
+        <li>Use the same formula to set prices</li>
+        <li>Maintain a certain difference in price for different types, sizes, or quantities of products</li>
+        <li>Adhere to a minimum fee or price schedule</li>
+        <li>Fix credit terms</li>
+        <li>Doesn’t advertise prices</li>
+      </ul>
+
+      <p>Price fixing restricts price competition and harms consumers.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a3"
+      >
+        Competitors in a market agree to fix wages.
+      </button>
+    </h3>
+    <div id="m-a3" class="usa-accordion__content usa-prose">
+      <p>Wage fixing occurs when competitors agree to fix or otherwise maintain wages for employees in the same market.</p>
+
+      <p>Wage fixing deprives workers of better compensation and an open labor market.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a4"
+      >
+        Competitors agree to rig bids.
+      </button>
+    </h3>
+    <div id="m-a4" class="usa-accordion__content usa-prose">
+      <p>Bid rigging occurs when parties in a competitive bidding process agree <em>before they submit their bids</em> to the buyer who will “win” the contract.</p>
+
+      <p>Often, the buyer is a federal, state, or local government. Bid rigging artificially raises prices.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a5"
+      >
+        Competitors agree to divide a market between themselves.
+      </button>
+    </h3>
+    <div id="m-a5" class="usa-accordion__content usa-prose">
+      <p>Market division or allocation schemes occur when companies agree to divvy up a market for its products or services, such as by customer territory.</p>
+
+      <p>Such schemes limit consumer options for a good or service.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a6"
+      >
+        An employee agreement that limits competition or compensation in a labor market.
+      </button>
+    </h3>
+    <div id="m-a6" class="usa-accordion__content usa-prose">
+      <p>Unlawful employment agreements can take many forms:</p>
+
+      <ul>
+        <li>A no-poach agreement exists when competitors agree not to hire, recruit, or pursue each other's employees.</li>
+        <li>A non-compete agreement is a covenant in an employment contract that limits a worker who leaves the employer from being able to join or start a competing firm.</li>
+        <li>A non-disclosure agreement limits a worker’s ability to share or make use of trade secrets or other proprietary information.</li>
+        <li>A non-solicit agreement exists when a company agrees with another company to refuse to solicit or hire each other’s employees.</li>
+        <li>Training repayment agreements require a worker to repay the firm if they leave before a specified date.</li>
+      </ul>
+
+      <p>Such agreements harm workers and innovation.</p>
+    </div>
+
+    <h3 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="m-a7"
+      >
+        A company merger or acquisition will significantly limit competition in a market for a particular good or service, and/or harm workers.
+      </button>
+    </h3>
+    <div id="m-a7" class="usa-accordion__content usa-prose">
+      <p></p>
+    </div>
 </section>
 
 <section class="usa-section usa-section-main">
   <h2 class="margin-top-0 tablet:margin-bottom-0">
-    How does the Antitrust Division handle antitrust complaints?
+    What happens with information you share
   </h2>
-  <p>
-    The Antitrust Division will create a record of the information that you provided, review your complaint, and refer it to the appropriate Division staff for further review. If the Division needs more information, we will contact you. Due to the confidential nature of Division investigations, you will not be notified if we open an investigation. While we try to reply to every complaint, we cannot always respond to each message individually.
-  </p>
-  <p>
-    Our <a href="https://www.justice.gov/atr/contact/confpol.html" class="usa-link">Confidentiality Policy</a> and <a href="https://www.justice.gov/doj/privacy-policy" class="usa-link">Privacy Policy</a> apply to all complaints received by the Antitrust Division.
-  </p>
+  {% include "review-process.html" %}
 </section>
 
 <section class="usa-section margin-bottom-0 padding-bottom-0 padding-top-3">
@@ -59,17 +177,18 @@ title: DOJ Antitrust
 </div> <!-- usa-section -->
 
 <div class="usa-section bg-primary-lighter section-report padding-top-8">
+
   <div class="grid-container">
 
     <div class="usa-card__container">
       <div class="usa-card__header">
-        <h2 class="usa-card__heading">Report online</h2>
+        <h2 class="usa-card__heading">Report an antitrust violation now</h2>
       </div>
       <div class="usa-card__body">
-        <p>You can report an antitrust violation to the Department of Justice via an online form.</p>
+        <p>Use our online form to have the Department of Justice Antitrust Division review your concern.</p>
       </div>
       <div class="usa-card__footer">
-        <a href="{% link '/report' %}" class="usa-button">Report an antitrust violation</a>
+        <a href="{% link '/report' %}" class="usa-button">Start a report</a>
       </div>
     </div>
 
@@ -78,17 +197,20 @@ title: DOJ Antitrust
         <h2 class="usa-card__heading">Report by mail or phone</h2>
       </div>
       <div class="usa-card__body">
-        <p>When reporting by phone or mail, please use the following questions as a guide to describe your concern:</p>
+        <p>When reporting by mail or phone, please include as much of the following information <em>in detail</em> that you can:</p>
+
         <ul>
-          <li>The names of the companies, individuals, or organizations involved</li>
-          <li>How do you believe they have violated the federal antitrust laws? (For details on federal antitrust laws, see <a href="https://www.justice.gov/atr/antitrust-laws-and-you" class="usa-link">Antitrust Laws and You</a>.)</li>
-          <li>Examples of, or details about, the conduct that you believe violates the antitrust laws</li>
-          <li>The product or service affected by the conduct, including where the product is manufactured or sold or where is the service is provided</li>
-          <li>The major competitors that sell the product or provide the service</li>
+          <li>Names of the companies, organizations, or people involved</li>
+          <li>Product or service that is affected</li>
+          <li>Location of where the affected product is made or sold, or where the affected service is offered</li>
+          <li>Names of major competitors that sell the product or provide the service</li>
+          <li>Describe what the company, organization, or person(s) did that you think violates the antitrust laws. Details and examples are helpful.</li>
+          <li>Why you think these acts violated the antitrust laws</li>
+          <li>Who is negatively affected by these acts and how they are affected</li>
           <li>Your role in the situation</li>
-          <li>Who is being affected and how they are being affected</li>
         </ul>
-        <h3>Report by postal mail</h3>
+
+        <h3>Send a letter to</h3>
         <p>
           Citizen Complaint Center<br/>
           Antitrust Division<br/>
@@ -96,11 +218,10 @@ title: DOJ Antitrust
           Room 3322<br/>
           Washington, DC 20530
         </p>
-        <h3>Report by phone</h3>
+        <h3>Call</h3>
         <p>1-888-647-3258 (toll free in the U.S. and Canada) or 202-307-2040.</p>
       </div>
     </div>
 
-    <p>Before reporting, review our <a href="https://www.justice.gov/doj/privacy-policy" class="usa-link">privacy policy and Paperwork Reduction Act statements</a>.</p>
   </div>
 </div>
