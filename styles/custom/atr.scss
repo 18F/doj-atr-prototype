@@ -242,6 +242,12 @@ h3 {
 // REPORTS //
 /////////////
 
+.report-type-container {
+  border: solid 1px grey;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
 .section-summary {
   dd {
     margin-inline-start: 0;
@@ -282,6 +288,10 @@ h3 {
   .usa-fieldset p {
     margin-left: 2em;
   }
+}
+
+.section-violation-type .usa-form--large {
+  max-width: 100%;
 }
 
 .usa-legend {
