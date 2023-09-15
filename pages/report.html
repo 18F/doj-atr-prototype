@@ -8,17 +8,19 @@ title: Report an antitrust violation
 
 <section class="usa-section usa-section-report">
   <h2>Contact</h2>
-  <p>You’re not required to give your name or contact information. If you want to remain anonymous, leave these fields blank and click “Continue.”</p>
-  <p>If you enter your email address or phone number, we will use it only if we need to respond to your report.</p>
+  <p>You don't have to give your name or contact information. If you want to remain anonymous, leave these fields blank and click "Continue."</p>
+  <p>If you enter your email address or phone number, we will use it <em>only</em> if we need to respond to your report.</p>
 
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
-      <label class="usa-label" for="report-name">Name (optional)</label>
+      <label class="usa-label" for="report-name">Full name (optional)</label>
+      <div class="usa-hint" id="nameHint">For example, Chris Okoro</div>
       <input class="usa-input" id="report-name" name="report-name" type="text"/>
       <label class="usa-label" for="report-email">Email address (optional)</label>
       <input class="usa-input" id="report-email" name="report-email" type="email"/>
       <label class="usa-label" for="report-phone">Phone number (optional)</label>
       <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
+      <div class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</div>
       <a href="{% link '/report-2' %}" role="button" class="usa-button">Continue</a>
     </fieldset>
   </form>
