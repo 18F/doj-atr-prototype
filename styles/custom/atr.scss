@@ -315,12 +315,28 @@ h3 {
   }
 }
 
-.section-violation-type .usa-form--large {
-  max-width: 100%;
+.section-violation-type .usa-form--large,
+.section-report-description .usa-form--large {
+  width: 100%;
+  max-width: none;
+}
+@media (min-width: 30em) {
+  .section-report-description .usa-form--large {
+    max-width: none;
+  }
+}
+@media (min-width: 20em) {
+  .section-report-description .usa-form--large {
+    max-width: none;
+  }
 }
 
 .usa-legend {
   margin-bottom: 1em;
+}
+
+.usa-label {
+  max-width: none;
 }
 
 .usa-label-header {
