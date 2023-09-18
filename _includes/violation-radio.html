@@ -1,16 +1,24 @@
 {% comment %}
-Expects label, id
+Expects label, id, description
 {% endcomment %}
 
-<div class="usa-radio">
-  <input
-    class="usa-radio__input"
-    id="type-{{ id }}"
-    type="radio"
-    name="violation-type"
-    value="type-{{ id }}"
-  />
-  <label class="usa-radio__label" for="type-{{ id }}">
-    {{ label }}
-  </label>
+<div class="report-type-container">
+
+  <div class="usa-radio">
+    <input
+      class="usa-radio__input"
+      id="type-{{ id }}"
+      type="radio"
+      name="violation-type"
+      value="type-{{ id }}"
+    />
+    <label class="usa-radio__label" for="type-{{ id }}">
+      <span>{{ label }}</span>
+      {% if description %}
+      <p>{{ description }}</p>
+      {% endif %}
+    </label>
+
+  </div>
+
 </div>

@@ -7,25 +7,17 @@ title: Report an antitrust violation
 {% include "report-steps.html", current_step: 3 %}
 
 <section class="usa-section usa-section-report section-report-description">
-  <h2>Description of violation</h2>
+  <h2>Violation details</h2>
 
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
       {% include "text-area-input.html", label: "Names of the companies, organizations, or people involved", id: "organizations" %}
 
-      {% include "text-area-input.html", label: "Product or service that is affected", id: "product-service" %}
+      {% include "text-input.html", label: "Product or service that is affected", id: "product-service" %}
 
-      {% include "text-area-input.html", label: "Where is the product made or sold? Or, where is the service provided?", id: "location" %}
+      {% include "text-input.html", label: "Where is the product made or sold? Or, where is the service provided?", id: "location" %}
 
-      {% include "text-area-input.html", label: "Names of major competitors that sell the product or provide the service", id: "competitors" %}
-
-      {% include "text-area-input.html", label: "Tell us what the company, organization, or person(s) did that you think violates the antitrust laws? Details are examples are helpful.", id: "what" %}
-
-      {% include "text-area-input.html", label: "Why do you think these acts violated the federal antitrust laws?", id: "why" %}
-
-      {% include "text-area-input.html", label: "Who is negatively affected by these acts? How are they affected?", id: "who-affected" %}
-
-      {% include "text-area-input.html", label: "What was your role in this situation?", id: "role" %}
+      {% include "text-input.html", label: "Names of major competitors that sell the product or provide the service", id: "competitors" %}
 
       <div class="report-nav">
         <a href="{% link '/report-4' %}" role="button" class="usa-button">Continue</a>

@@ -13,53 +13,25 @@ title: Report an antitrust violation
 
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Price fixing", id: "price-fixing" %}
-        <p>When competitors agree to raise, fix, or otherwise maintain the price for their products or services</p>
-      </div>
+      {% include "violation-radio.html", label: "Price fixing", id: "price-fixing", description: "When competitors agree to raise, fix, or otherwise maintain the price for their products or services", %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Wage fixing", id: "wage-fixing" %}
-        <p>When competitors agree to fix or otherwise maintain wages for employees in the same market</p>
-      </div>
+      {% include "violation-radio.html", label: "Wage fixing", id: "wage-fixing", description: "When competitors agree to fix or otherwise maintain wages for employees in the same market" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Bid rigging", id: "bid-rigging" %}
-        <p>Parties in a competitive bidding process agree who will "win" the contract <em>before</em> they submit their bids to a buyer</p>
-      </div>
+      {% include "violation-radio.html", label: "Bid rigging", id: "bid-rigging", description: "Parties in a competitive bidding process agree who will "win" the contract <em>before</em> they submit their bids to a buyer" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Market division or allocation scheme", id: "allocation" %}
-        <p>Companies that sell the same product or service agree to divide a market between themselves, such as by customer territory</p>
-      </div>
+      {% include "violation-radio.html", label: "Market division or allocation scheme", id: "allocation", description: "Companies that sell the same product or service agree to divide a market between themselves, such as by customer territory" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Unlawful employment agreement", id: "noncompete" %}
-        <p>A no-poach, non-compete, non-disclosure, or non-solicit employement agreement, or other covenant, that limits competition</p>
-      </div>
+      {% include "violation-radio.html", label: "Unlawful employment agreement", id: "noncompete" description: "A no-poach, non-compete, non-disclosure, or non-solicit employement agreement, or other covenant, that limits competition" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Monopoly", id: "monopoly" %}
-        <p>A company has gotten or is maintaining market power for a product or service by <em>intentinoally acting to prevent competition</em></p>
-      </div>
+      {% include "violation-radio.html", label: "Monopoly", id: "monopoly", description: "A company has gotten or is maintaining market power for a product or service by <em>intentinoally acting to prevent competition</em>" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "Proposed merger or acquisition", id: "proposed-acq" %}
-        <p>A proposed merger or acquisition will lesson competition in a market</p>
-      </div>
+      {% include "violation-radio.html", label: "Proposed merger or acquisition", id: "proposed-acq" description: "A proposed merger or acquisition will lesson competition in a market" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "“Gun jumping” by merging parties", id: "gun-jumping" %}
-        <p>Companies awaiting regulatory approval to merge have begun to merge operations or take significant control over the operations, management, or decision-making of the to-be-acquired assets</p>
-      </div>
+      {% include "violation-radio.html", label: "“Gun jumping” by merging parties", id: "gun-jumping" description: "Companies awaiting regulatory approval to merge have begun to merge operations or take significant control over the operations, management, or decision-making of the to-be-acquired assets" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "I don't know or I'm not sure which type of antitrust violation applies to my situation", id: "gov-fraud" %}
-      </div>
+      {% include "violation-radio.html", label: "I don't know or I'm not sure which type of antitrust violation applies to my situation", id: "gov-fraud" %}
 
-      <div class="report-type-container">
-        {% include "violation-radio.html", label: "I have a different question or complaint for the US Government", id: "something-else" %}
-      </div>
+      {% include "violation-radio.html", label: "I have a different question or complaint for the US Government", id: "something-else" %}
 
       <div class="report-nav">
         <a href="{% link '/report-3' %}" role="button" class="usa-button">Continue</a>
