@@ -174,14 +174,6 @@ h3 {
   line-height: 1.4;
 }
 
-label span {
-  font-weight: bold;
-}
-
-.usa-hint {
-  line-height: 1.5;
-}
-
 #main-content {
   .usa-section-main {
     border-bottom: solid 1px lightgray;
@@ -311,14 +303,14 @@ label span {
 }
 
 .usa-radio {
-  .section-report-description {
-    label {
-      font-weight: bold;
-      margin-top: 0;
-    }
+  .usa-label-header {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0;
   }
 
-  label p {
+  .usa-label-description {
+    font-size: 1.125rem;
     margin-bottom: 0;
   }
 }
@@ -329,6 +321,20 @@ label span {
 
 .usa-legend {
   margin-bottom: 1em;
+}
+
+.usa-label-header {
+  font-weight: bold;
+}
+
+.usa-label-description {
+  display: block;
+  margin-top: .75rem;
+}
+
+.usa-hint {
+  display: block;
+  line-height: 1.5;
 }
 
 .usa-section.usa-section-report {

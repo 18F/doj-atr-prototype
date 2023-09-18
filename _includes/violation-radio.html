@@ -13,9 +13,9 @@ Expects label, id, description
       value="type-{{ id }}"
     />
     <label class="usa-radio__label" for="type-{{ id }}">
-      <span>{{ label }}</span>
+      <span class="usa-label-header">{{ label }}</span>
       {% if description %}
-      <p>{{ description }}</p>
+      <span class="usa-label-description">{{ description }}</span>
       {% endif %}
     </label>
 
