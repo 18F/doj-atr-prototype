@@ -4,91 +4,25 @@ title: Report an antitrust violation
 
 <h1>Report an antitrust violation</h1>
 
-{% include "report-steps.html", current_step: 4  %}
+{% include "report-steps.html", current_step: 4 %}
 
-<section class="usa-section usa-section-report section-summary">
-  <h2>Review and submit</h2>
+<section class="usa-section usa-section-report section-report-description">
+  <h2>Description of violation</h2>
 
-  <p>Please review your answers to make sure they are accurate and truthful to the best of your knowledge. To edit an answer, click "Edit report" at the end of the form.</p>
+  <form class="usa-form usa-form--large margin-bottom-3">
+    <fieldset class="usa-fieldset">        
+      {% include "text-area-input.html", label: "Tell us what the company, organization, or person(s) did that you think violates the antitrust laws? Details and examples are helpful.", id: "what" %}
 
-  <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
-    <h3 class="usa-accordion__heading">
-      <button
-        type="button"
-        class="usa-accordion__button"
-        aria-expanded="true"
-        aria-controls="m-a1"
-      >
-        Contact
-      </button>
-    </h3>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
-      <dl>
-        <dt>Name</dt>
-        <dd>Full name</dd>
+      {% include "text-area-input.html", label: "Why do you think these acts violated the federal antitrust laws?", id: "why" %}
 
-        <dt>Email address</dt>
-        <dd>email@example.com</dd>
+      {% include "text-area-input.html", label: "Who is negatively affected by these acts? How are they affected?", id: "who-affected" %}
 
-        <dt>Phone number</dt>
-        <dd>123-456-7890</dd>
-      </dl>
-    </div>
+      {% include "text-area-input.html", label: "What was your role in this situation?", id: "role" %}
 
-    <h3 class="usa-accordion__heading">
-      <button
-        type="button"
-        class="usa-accordion__button"
-        aria-expanded="true"
-        aria-controls="m-a2"
-      >
-        What type of antitrust violation do you think occurred?
-      </button>
-    </h3>
-    <div id="m-a2" class="usa-accordion__content usa-prose">
-      <dl>
-        <dt>Bid rigging</dt>
-        <dd>Bid rigging is the way that conspiring competitors effectively raise prices where purchasers–often federal, state, or local governments–acquire goods or services by soliciting competing bids.</dd>
-      </dl>
-    </div>
-
-    <h3 class="usa-accordion__heading">
-      <button
-        type="button"
-        class="usa-accordion__button"
-        aria-expanded="true"
-        aria-controls="m-a3"
-      >
-        Description of violation
-      </button>
-    </h3>
-    <div id="m-a3" class="usa-accordion__content usa-prose">
-      <dl>
-        <dt>Some field</dt>
-        <dd>Some description</dd>
-
-        <dt>Another field</dt>
-        <dd>Another description</dd>
-      </dl>
-    </div>
-  </div>
-
-  <div class="robot">
-    <input
-      class="usa-checkbox__input"
-      id="check-not-bot"
-      type="checkbox"
-      name="captcha"
-      value="check-not-box"
-    />
-    <label class="usa-checkbox__label" for="check-not-bot">
-      I'm not a robot
-    </label>
-  </div>
-
-  <div class="report-nav">
-    <a href="{% link '/report-confirm' %}" role="button" class="usa-button">Submit antitrust violation</a>
-    <a href="{% link '/report-3' %}" class="usa-link margin-left-2">Go back</a>
-  </div>
-
+      <div class="report-nav">
+        <a href="{% link '/report-5' %}" role="button" class="usa-button">Continue</a>
+        <a href="{% link '/report-3' %}" class="usa-link margin-left-2">Go back</a>
+      </div>
+    </fieldset>
+  </form>
 </section>

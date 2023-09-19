@@ -13,14 +13,23 @@ title: Report an antitrust violation
 
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
-      <label class="usa-label" for="report-name">Full name (optional)</label>
-      <div class="usa-hint" id="nameHint">For example, Chris Okoro</div>
-      <input class="usa-input" id="report-name" name="report-name" type="text"/>
-      <label class="usa-label" for="report-email">Email address (optional)</label>
-      <input class="usa-input" id="report-email" name="report-email" type="email"/>
-      <label class="usa-label" for="report-phone">Phone number (optional)</label>
-      <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
-      <div class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</div>
+      <label class="usa-label" for="report-name">
+        <span class="usa-label-header">Full name (optional)</span>
+        <span class="usa-hint" id="nameHint">For example, Chris Okoro</span>
+        <input class="usa-input" id="report-name" name="report-name" type="text"/>
+      </label>
+      
+      <label class="usa-label" for="report-email">
+        <span class="usa-label-header">Email address (optional)</span>
+        <input class="usa-input" id="report-email" name="report-email" type="email"/>
+      </label>
+      
+      <label class="usa-label" for="report-phone">
+        <span class="usa-label-header">Phone number (optional)</span>
+        <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
+        <span class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</span>
+      </label>
+
       <a href="{% link '/report-2' %}" role="button" class="usa-button">Continue</a>
     </fieldset>
   </form>
