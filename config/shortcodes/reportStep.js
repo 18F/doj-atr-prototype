@@ -1,4 +1,4 @@
-// Usage: {% report_step "Step name", step_number, current_step %}
+// Usage: {% report_step "Step name", (relative) link, step_number, current_step %}
 
 let reportStatus = function(reportStep, requestedStep) {
   if (reportStep == requestedStep) {
