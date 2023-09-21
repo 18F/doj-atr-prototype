@@ -1,9 +1,12 @@
 {% comment %}
-Expects label, id
+Expects label, hint, id
 {% endcomment %}
 
 <label class="usa-label" for="report-detail-{{ id }}">
   <span>{{ label }}</span>
+  {% if hint %}
+    <span class="usa-hint" id="{{id}}-hint">{{ hint }}</span>
+  {% endif %}
   <input
   class="usa-input"
   id="report-detail-{{ id }}"

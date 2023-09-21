@@ -6,31 +6,51 @@ title: Report an antitrust violation
 
 {% include "report-steps.html", current_step: 1 %}
 
-<section class="usa-section usa-section-report">
-  <h2>Contact</h2>
-  <p>You don't have to give your name or contact information. If you want to remain anonymous, leave these fields blank and click "Continue."</p>
-  <p>If you enter your email address or phone number, we will use it <em>only</em> if we need to respond to your report.</p>
+<section class="usa-section usa-section-report section-violation-type padding-bottom-05">
+  <h2>Thank you for taking the time to file a report.</h2>
+
+  <p>This form collects information that may help the Antitrust Division identify a potential antitrust violation. It has four sections:</p>
+
+  <ol>
+    <li>Type of antitrust violation: this helps us sort reports</li>
+    <li>Details: this helps us understand the issue and sort reports</li>
+    <li>Description (required): this lets you describe what happened and why you think the Antitrust Division should be aware of it</li>
+    <li>Contact: this allows us to contact you if we need more information</li>
+  </ol>
+
+  <p>You can edit and review your report before submitting it.</p>
+</section>
+
+<section class="usa-section usa-section-report section-violation-type">
+  <h2>What type of antitrust violation do you think occurred?</h2>
+
+  <p>Please select the type that you think best matches the activity you're reporting. You can describe it in your own words in the next section.</p>
 
   <form class="usa-form usa-form--large margin-bottom-3">
     <fieldset class="usa-fieldset">
-      <label class="usa-label" for="report-name">
-        <span class="usa-label-header">Full name (optional)</span>
-        <span class="usa-hint" id="nameHint">For example, Chris Okoro</span>
-        <input class="usa-input" id="report-name" name="report-name" type="text"/>
-      </label>
-      
-      <label class="usa-label" for="report-email">
-        <span class="usa-label-header">Email address (optional)</span>
-        <input class="usa-input" id="report-email" name="report-email" type="email"/>
-      </label>
-      
-      <label class="usa-label" for="report-phone">
-        <span class="usa-label-header">Phone number (optional)</span>
-        <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
-        <span class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</span>
-      </label>
+      {% include "violation-radio.html", label: "Price fixing", id: "price-fixing", description: "When competitors agree to raise, fix, or otherwise maintain the price for their products or services", %}
 
-      <a href="{% link '/report-2' %}" role="button" class="usa-button">Continue</a>
+      {% include "violation-radio.html", label: "Wage fixing", id: "wage-fixing", description: "When competitors agree to fix or otherwise maintain wages for employees in the same market" %}
+
+      {% include "violation-radio.html", label: "Bid rigging", id: "bid-rigging", description: "Parties in a competitive bidding process agree who will "win" the contract <em>before</em> they submit their bids to a buyer" %}
+
+      {% include "violation-radio.html", label: "Market division or allocation scheme", id: "allocation", description: "Companies that sell the same product or service agree to divide a market between themselves, such as by customer territory" %}
+
+      {% include "violation-radio.html", label: "Unlawful employment agreement", id: "noncompete" description: "A no-poach, non-compete, non-disclosure, or non-solicit employement agreement, or other covenant, that limits competition" %}
+
+      {% include "violation-radio.html", label: "Monopoly", id: "monopoly", description: "A company has gotten or is maintaining market power for a product or service by <em>intentinoally acting to prevent competition</em>" %}
+
+      {% include "violation-radio.html", label: "Proposed merger or acquisition", id: "proposed-acq" description: "A proposed merger or acquisition will lesson competition in a market" %}
+
+      {% include "violation-radio.html", label: "“Gun jumping” by merging parties", id: "gun-jumping" description: "Companies awaiting regulatory approval to merge have begun to merge operations or take significant control over the operations, management, or decision-making of the to-be-acquired assets" %}
+
+      {% include "violation-radio.html", label: "I don't know or I'm not sure which type of antitrust violation applies to my situation", id: "gov-fraud" %}
+
+      {% include "violation-radio.html", label: "I have a different question or complaint for the US Government", id: "something-else" %}
+
+      <div class="report-nav">
+        <a href="{% link '/report-details' %}" role="button" class="usa-button">Continue</a>
+      </div>
     </fieldset>
   </form>
 </section>

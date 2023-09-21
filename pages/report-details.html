@@ -4,7 +4,7 @@ title: Report an antitrust violation
 
 <h1>Report an antitrust violation</h1>
 
-{% include "report-steps.html", current_step: 3 %}
+{% include "report-steps.html", current_step: 2 %}
 
 <section class="usa-section usa-section-report section-report-description">
   <h2>Violation details</h2>
@@ -15,13 +15,13 @@ title: Report an antitrust violation
 
       {% include "text-input.html", label: "Product or service that is affected", id: "product-service" %}
 
-      {% include "text-input.html", label: "Where is the product made or sold? Or, where is the service provided?", id: "location" %}
+      {% include "text-input.html", label: "Where is the product made or sold? Or, where is the service provided?", hint: "For example, Salinas, CA; Santa Fe County; the internet", id: "location" %}
 
       {% include "text-input.html", label: "Names of major competitors that sell the product or provide the service", id: "competitors" %}
 
       <div class="report-nav">
-        <a href="{% link '/report-4' %}" role="button" class="usa-button">Continue</a>
-        <a href="{% link '/report-2' %}" class="usa-link margin-left-2">Go back</a>
+        <a href="{% link '/report-description' %}" role="button" class="usa-button">Continue</a>
+        <a href="{% link '/report' %}" class="usa-link margin-left-2">Go back</a>
       </div>
     </fieldset>
   </form>
