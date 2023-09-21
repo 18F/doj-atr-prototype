@@ -4,10 +4,10 @@ Expects parameter "current_step" with a integer for the step number
 
 <div class="usa-step-indicator" aria-label="progress">
   <ol class="usa-step-indicator__segments">
-    {% report_step "Contact information", 1, current_step %}
-    {% report_step "Type of violation", 2, current_step %}
-    {% report_step "Violation details", 3, current_step %}
-    {% report_step "Description of violation", 4, current_step %}
-    {% report_step "Review and submit", 5, current_step %}
+    {% report_step "Type of violation", "report", 1, current_step %}
+    {% report_step "Violation details", "report-details", 2, current_step %}
+    {% report_step "Description of violation", "report-description", 3, current_step %}
+    {% report_step "Contact information", "report-contact", 4, current_step %}
+    {% report_step "Review and submit", "report-review", 5, current_step %}
   </ol>
 </div>
