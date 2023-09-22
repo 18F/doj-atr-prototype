@@ -251,6 +251,31 @@ h3 {
 // REPORTS //
 /////////////
 
+.contact-anonymous {
+  display: flex;
+  align-items: center;
+
+  div {
+    border: solid 1px lightgray;
+    padding: 1em;
+  }
+}
+
+.contact-form {
+  max-width: 100%;
+
+  .grid-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contact-or {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .report-step-nav {
   text-decoration: none;
 }

@@ -8,27 +8,53 @@ title: Report an antitrust violation
 
 <section class="usa-section usa-section-report">
   <h2>Contact</h2>
-  <p>You don't have to give your name or contact information. If you want to remain anonymous, leave these fields blank and click "Continue."</p>
+  <p><strong>You don't have to give your name or contact information.</strong> If you want to remain anonymous, check the option to report anonymously.</p>
   <p>If you enter your email address or phone number, we will use it <em>only</em> if we need to respond to your report.</p>
 
-  <form class="usa-form usa-form--large margin-bottom-3">
+  <form class="usa-form contact-form margin-bottom-3">
     <fieldset class="usa-fieldset">
-      <label class="usa-label" for="report-name">
-        <span class="usa-label-header">Full name (optional)</span>
-        <span class="usa-hint" id="nameHint">For example, Chris Okoro</span>
-        <input class="usa-input" id="report-name" name="report-name" type="text"/>
-      </label>
-      
-      <label class="usa-label" for="report-email">
-        <span class="usa-label-header">Email address (optional)</span>
-        <input class="usa-input" id="report-email" name="report-email" type="email"/>
-      </label>
-      
-      <label class="usa-label" for="report-phone">
-        <span class="usa-label-header">Phone number (optional)</span>
-        <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
-        <span class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</span>
-      </label>
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-col-5">
+            <label class="usa-label" for="report-name">
+              <span class="usa-label-header">Full name (optional)</span>
+              <span class="usa-hint" id="nameHint">For example, Chris Okoro</span>
+              <input class="usa-input" id="report-name" name="report-name" type="text"/>
+            </label>
+
+            <label class="usa-label" for="report-email">
+              <span class="usa-label-header">Email address (optional)</span>
+              <input class="usa-input" id="report-email" name="report-email" type="email"/>
+            </label>
+
+            <label class="usa-label" for="report-phone">
+              <span class="usa-label-header">Phone number (optional)</span>
+              <input class="usa-input" id="report-phone" name="report-phone" type="tel"/>
+              <span class="usa-hint" id="phoneHint">10 digits, U.S. only. For example: 999-999-9999</span>
+            </label>
+          </div>
+
+          <div class="grid-col-2 contact-or">
+            <strong>– OR –</strong>
+          </div>
+
+          <div class="grid-col-5 contact-anonymous">
+            <div>
+              <input
+                class="usa-checkbox__input"
+                id="check-anonymous"
+                type="checkbox"
+                name="submit-anonymousely"
+                value="check-anonymous"
+              />
+              <label class="usa-checkbox__label" for="check-anonymous">
+                <strong>Submit my report anonymously</strong>
+              </label>
+              <p>I understand that by submitting anonymously, the DOJ will not be able to follow up with me about my complaint.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <a href="{% link '/report-review' %}" role="button" class="usa-button">Continue</a>
       <a href="{% link '/report-description' %}" class="usa-link margin-left-2">Go back</a>
