@@ -4,7 +4,7 @@ This prototype is being developed by [18F](https://18f.gsa.gov/) on behalf of th
 
 This a non-production system. This means this site is only for testing and prototyping and may not be used to store actual data.
 
-This branch is for use during external research during the week of Sept 19th.
+This branch is for use during external research on Sept 22, 2023.
 
 ## Development
 
