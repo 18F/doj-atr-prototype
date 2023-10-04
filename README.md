@@ -1,31 +1,32 @@
 # DOJ Antitrust backend prototype
 
-This prototype is being developed by [18F](https://18f.gsa.gov/) on behalf of the DOJ Antitrust Division (ATR).
+__This project is no longer active__
 
-This a non-production system. This means this site is only for testing and prototyping and may not be used to store actual data.
+This prototype was developed by [18F](https://18f.gsa.gov/) on behalf of the [DOJ Antitrust Division](https://www.justice.gov/atr) (ATR) in 2023. It was used with usability testing conducted with members of the public.
 
-This branch is for use during external research during the week of Sept 19th.
+This a non-production system and does not collect or store data.
+
+[View the latest version of the prototype](https://federalist-7375f0a0-5451-4b0d-aae4-45ef17c1a18d.sites.pages.cloud.gov/site/18f/doj-atr-prototype/)
 
 ## Development
 
-### Docker
+### Local development
 
-May not work with Zscaler
-1. Clone this repo
-2. Run `docker compose up`
-3. Open http://localhost:8080
+Install node and npm.
 
-### Not Docker
-
-To run the site locally:
-
-1. Clone this repo
-2. From the repo directory, run:
+1. From the repo directory, run:
    ```sh
    npm install
    npm start
    ```
-3. Open http://localhost:8080
+1. Go to http://localhost:8080
+
+### GitHub Codespaces
+
+1. Create a new GitHub Codespace
+1. Wait a moment while it detects the environment and installs dependencies
+1. Run `npm start`
+1. Click the button on the lower right to go to a new browser window to preview the site
 
 ### Run tests
 
@@ -34,7 +35,16 @@ npm test
 npm run lint
 ```
 
-Pa11y tests coming soon.
+## Preview
+
+### Code
+
+This repository is a static site generator, which means that it creates HTML from more simple documents. The HTML that made up the final iteration of the prototype has been bundled up as `_site.zip`. You can download and unzip `_site.zip` to try out the prototype locally.
+
+### Cloud.gov Pages
+
+Preview branches are built and hosted on [Cloud.gov Pages](https://cloud.gov/pages/). This is not a production site and there is no guarantee of the continued presence of the preview. The most recent preview of the main branch is available at [https://federalist-7375f0a0-5451-4b0d-aae4-45ef17c1a18d.sites.pages.cloud.gov/site/18f/doj-atr-prototype/](https://federalist-7375f0a0-5451-4b0d-aae4-45ef17c1a18d.sites.pages.cloud.gov/site/18f/doj-atr-prototype/).
+
 
 ## Public domain
 
