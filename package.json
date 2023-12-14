@@ -24,7 +24,7 @@
     "autoprefixer": "^10.4.15",
     "eleventy-plugin-svg-sprite": "^2.4.2",
     "esbuild-sass-plugin": "^2.16.0",
-    "esbuild": "^0.19.8",
+    "esbuild": "^0.19.9",
     "glob": "^8.1.0",
     "js-yaml": "^4.1.0",
     "jsdom": "^21.1.2",
